@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+.bg-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.container {
+  width: 90%;
+}
+.bg-img {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/money-manager/money-manager-bg.png');
+  background-size: cover;
+  width: 100%;
+  padding: 25px;
+  padding-top: 35px;
+  text-align: center;
+  border-radius: 20px;
+}
+.bg-img h1 {
+  color: #475569;
+  font-size: 26px;
+}
+.bg-img p {
+  color: #475569;
+  font-size: 15px;
+}
+.bg-img span {
+  color: #0b69ff;
+  font-weight: bold;
+  font-size: 16px;
+}
+.ul-container {
+  list-style-type: none;
+  padding: 0px;
+  padding-bottom: 30px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid #7e858e;
+  border-radius: 10px;
+  padding: 20px;
+  padding-bottom: 40px;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+.form-heading {
+  color: #475569;
+  font-size: 18px;
+  padding-bottom: 12px;
+}
+label {
+  color: #7e858e;
+  font-size: 12px;
+  font-weight: bold;
+}
+input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #b3b9c0;
+  padding-left: 10px;
+  border-radius: 4px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  outline: none;
+  font-size: 14px;
+}
+select {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #b3b9c0;
+  border-radius: 4px;
+  padding-left: 10px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  outline: none;
+  font-size: 14px;
+}
+.form-btn {
+  border: 0px;
+  outline: none;
+  cursor: pointer;
+  background-color: #0b69ff;
+  color: #ffffff;
+  font-size: 15px;
+  width: 70px;
+  height: 40px;
+  border-radius: 7px;
+}
+
+.history-cont {
+  list-style-type: none;
+  padding: 20px;
+  border: 1px solid #7e858e;
+  border-radius: 10px;
+  padding-bottom: 30px;
+}
+.history-main-heading {
+  color: #475569;
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+.col-heading-cont {
+  display: flex;
+  align-items: center;
+  border: 1px solid #7e858e;
+  padding: 3px;
+  padding-left: 10px;
+  margin-bottom: 0;
+}
+.col-heading-cont p {
+  color: #475569;
+  font-size: 15px;
+  font-weight: bold;
+  width: 120px;
+}
+.transaction-cont {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+@media (min-width: 768px), (min-width: 992px), (min-width: 1200px) {
+  .bg-img {
+    text-align: start;
+    padding-left: 55px;
+  }
+  .ul-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .form-history-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .form-container {
+    margin-top: 15px;
+  }
+}
+@media (min-width: 768px) {
+  .form-container {
+    flex-grow: 1;
+    width: 350px;
+    margin-right: 40px;
+  }
+  .history-cont {
+    flex-grow: 1;
+    width: 350px;
+  }
+}
+@media (min-width: 992px) {
+  .form-container {
+    flex-grow: 1;
+    width: 300px;
+    max-width: 350px;
+  }
+  .history-cont {
+    flex-grow: 1;
+    width: 400px;
+    max-width: 500px;
+    padding: 30px;
+    padding-bottom: 50px;
+  }
+}
